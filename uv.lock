@@ -1,0 +1,35 @@
+version = 1
+revision = 1
+requires-python = ">=3.13"
+
+[[package]]
+name = "hello-websocket-client"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "rel" },
+    { name = "websocket-client" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "rel", specifier = ">=0.4.9.20" },
+    { name = "websocket-client", specifier = ">=1.8.0" },
+]
+
+[[package]]
+name = "rel"
+version = "0.4.9.20"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/80/35/0578b484ab6ae2883f0e6f338f5cae68a14b2bc92c95f7117e56ea27dee9/rel-0.4.9.20-py3-none-any.whl", hash = "sha256:d37650d4f8c8d7549d8b1471391b055d302180ba7339ab2945a881f47f9895da", size = 15210 },
+]
+
+[[package]]
+name = "websocket-client"
+version = "1.8.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e6/30/fba0d96b4b5fbf5948ed3f4681f7da2f9f64512e1d303f94b4cc174c24a5/websocket_client-1.8.0.tar.gz", hash = "sha256:3239df9f44da632f96012472805d40a23281a991027ce11d2f45a6f24ac4c3da", size = 54648 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5a/84/44687a29792a70e111c5c477230a72c4b957d88d16141199bf9acb7537a3/websocket_client-1.8.0-py3-none-any.whl", hash = "sha256:17b44cc997f5c498e809b22cdf2d9c7a9e71c02c8cc2b6c56e7c2d1239bfa526", size = 58826 },
+]
